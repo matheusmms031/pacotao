@@ -1,0 +1,22 @@
+.acordion{
+    width: 35rem;
+}
+
+@media (max-width:1040px) {
+    .acordion{
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:700px) {
+    .acordion{
+        width: 30rem;
+    }
+}
+
+@media (max-width:500px) {
+    .acordion{
+        width: 20rem;
+    }
+}
+

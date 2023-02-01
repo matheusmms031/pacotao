@@ -1,0 +1,317 @@
+
+@font-face {
+    font-family: "Sofia Sans";
+    src: url("../font/Sofia/SofiaSans-Bold.ttf");
+}
+
+
+
+@-webkit-keyframes glow {
+    from {
+        color:#ffffff;
+        font-size: 1.3rem;
+    }
+    
+    to {
+        color:#d6fc00;
+        font-size: 1.4rem;
+    }
+  }
+
+body{
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    font-family: "Sofia Sans";
+}
+
+#coloroverlay{
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+}
+
+
+#intro1{
+    background-image: linear-gradient( 135deg, #3b2667d8 10%, #8f21ddd2 100%);
+    width: 100%;
+    height: 100vh;
+    #cabecalho{
+        display: flex;
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        justify-content: space-around;
+        padding: 1rem 2rem 1rem 2rem;
+        #logo{
+            display: flex;
+            align-items: center;
+            font-family:'Lucida Sans', 'Lucida Sans Bold', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            font-weight: bold;
+            img{
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+        }
+    }
+    #maincab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-family: "Sofia Sans";
+        text-shadow: -7px -2px 8px rgba(0,0,0,0.57);
+        text-align: center;
+        #caixa1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 50vw;
+            height: 30rem;
+        }
+        #texts{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: fit-content;
+            #title{
+                padding-bottom: 2rem;
+                color: whitesmoke;
+                width: 60vw;
+                text-align: center;
+                font-size: 3rem;
+            }
+            #preco{
+                font-size: large;
+                color: yellow;
+                animation: glow 1s ease-in-out infinite alternate;
+            }
+        }
+    }
+}
+
+#back2{
+    background-image: url(../assets/backgroud2.jpg);
+    background-size: cover;
+}
+
+
+
+#intro2{
+    box-shadow: #000000;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #17151e69 0%, rgba(#17151e60, 0.9) 80%), radial-gradient(at top center, #17151E 0%, rgba(0, 0, 0, 0.233) 120%) #9898982d;
+    background-blend-mode: multiply,multiply;
+    -webkit-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 40px 10px rgba(0,0,0,0.75);
+}
+
+#habilidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+
+    #title{
+        padding-bottom: 2rem;
+        font-family: "Sofia Sans";
+        font-size: 2.5rem;
+        color: rgba($color: #ffffff, $alpha: 1);
+    }
+}
+
+#intro2box{
+    display: flex;
+    width: 100%;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#intro3{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#aprender{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    #aprendertitle{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+
+        #tituloaprender{
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #8b8b8b;
+        }
+
+        #subtitle{
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            width: 30rem;
+        }
+    }
+}
+
+
+#intro4{
+    display: flex;
+    width: 100%;
+    padding-top:5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #17151E 0%, rgba(#17151E, 0.9) 80%), radial-gradient(at top center, #17151E 0%, rgba(0,0,0,0.40) 120%) #9898982d;
+
+    #primary-box{
+        width: 65rem;
+    }
+}
+
+
+
+
+@media (max-width: 1200px){ // INTRO 1
+    #intro1{
+        #cabecalho{
+            #logo{
+                img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        #maincab{
+            #caixa1 {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 50vw;
+                height: 30rem;
+            }
+            #texts{
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                #title{
+                    color: whitesmoke;
+                    width: 70vw;
+                    text-align: left;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px){ // INTRO 1 e INTRO 3
+    #intro1{
+        #maincab{
+            height: 75%;
+            #caixa1 {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 80vw;
+                height: 30rem;
+            }
+            #texts{
+                #title{
+                    color: whitesmoke;
+                    width: 80vw;
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    #aprender{
+        #aprendertitle{
+            #tituloaprender{
+                font-size: 2rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #8b8b8b;
+            }
+
+            #subtitle{
+                font-size: 1.1rem;
+                margin-top: 2rem;
+                width: 20rem;
+            }
+        }
+    }
+}
+
+@media (max-width:550px) {
+    #habilidade{
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 500px){ // INTRO 1 e INTRO 3
+    #intro1{
+        #maincab{
+            height: 75%;
+            #caixa1 {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                width: 80vw;
+                height: 30rem;
+            }
+            #texts{
+                #title{
+                    color: whitesmoke;
+                    width: 80vw;
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    #aprender{
+        #aprendertitle{
+            #tituloaprender{
+                font-size: 1.7rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid #8b8b8b;
+            }
+
+            #subtitle{
+                font-size: 1.1rem;
+                margin-top: 2rem;
+                width: 20rem;
+            }
+        }
+    }
+}
+

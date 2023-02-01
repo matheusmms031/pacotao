@@ -1,0 +1,81 @@
+import "../styles/homestyle.scss"
+import Logo from "../assets/Ellipse 2.png"
+import Button from "../components/Button"
+import '../font/Sofia/SofiaSans-Bold.ttf'
+import ButtonGrande from "../components/ButtonGrande.jsx"
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react"
+import Estudante from '../assets/estudante.svg'
+import Empresarios from '../assets/engenheiros.svg'
+import Trabalhadores from '../assets/trabalhadores.svg'
+import Card from "../components/Card"
+import Acordion from "../components/Acordion"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Notification from "../components/Notification"
+import FirstTitle from "../components/FirstTitle"
+
+export function Home(){
+    useEffect(() => {
+        Aos.init({duration: 2000}), []
+    })
+
+
+    return(
+        <div>
+            <div id='app'>
+                <div id='coloroverlay'>
+                    <section id='intro1'>
+                        <header id='cabecalho'>
+                                <div id='logo'>
+                                    <img src={Logo} style={{'hover':{'width':'500px'}}}/>
+                                    Codersmasters
+                                </div>
+                            <Button>QUERO PARTICIPAR</Button>
+                        </header>
+                        <main id='maincab'>
+                            <div id='caixa1'>
+                                <div id='texts'>
+                                    <span id='title'>Aprenda e domine a linguagem Python no nosso curso <span className="marcadorprincipal">Pacotão do programador</span> e seja um dos programadores mais bem pagos da atualidade</span>
+                                    <span id='preco'>9x R$8,40 ou R$67 à vista</span>
+                                </div>
+                                <ButtonGrande>COMECE AGORA</ButtonGrande>
+                            </div>
+                        </main>
+                    </section>
+                </div>
+                <div id='back2'>
+                    <section id='intro2'>
+                        <div id='habilidade'>
+                            <span id='title' data-aos='fade-up'>Para quem este curso é adequado?</span>
+                            <div id='cards'>
+                                <div id='intro2box'>
+                                    <Card titulo='Estudantes' Aosdata='zoom-in' Aosduration='1500' image={Estudante}>Para os estudantes que pretendem aprender a programar por hobbie ou procurarem um trabalho futuro na area.</Card>
+                                    <Card titulo='Empresários' Aosdata='zoom-in' Aosduration='1500' image={Empresarios}>É utilizado muito pelos empresários e empresas, o que pode ser de grande atrativo para seu negócio</Card>
+                                    <Card titulo='Trabalhadores' Aosdata='zoom-in' Aosduration='1500' image={Trabalhadores}>E para aqueles que já estão em uma empresa e querem alavancar dentro da sua empresa.</Card>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section id='intro3'>
+                    <div id='aprender'>
+                        <div id='aprendertitle'>
+                            <span id='tituloaprender'>O que veremos no curso ?</span>
+                            <span id='subtitle'>Tudo o que estará disponível no curso aqui será ditas nos acordiões do lado ou abaixo</span>
+                        </div>
+                        <div id='aprendercontent'>
+                            <Acordion/>
+                        </div>
+                    </div>
+                </section>
+                <section id='intro4'>
+                    <div id='primary-box'>
+                        <FirstTitle title='O nosso curso vai além de aulas!'>Aqui na Codersmasters não focamos apenas em formar alunos, como também procuramos criar laços e vinculos de amizades entre alunos, para isso temos as seguintes práticas:</FirstTitle>
+                    </div>
+                </section>
+            </div>
+        </div>
+    )
+}
+export default Home
