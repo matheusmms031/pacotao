@@ -188,7 +188,19 @@ body{
     background: linear-gradient(to bottom, #17151E 0%, rgba(#17151E, 0.9) 80%), radial-gradient(at top center, #17151E 0%, rgba(0,0,0,0.40) 120%) #9898982d;
 
     #primary-box{
+        margin: 10px;
         width: 65rem;
+    }
+
+    #second-box{
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(150, 150, 150, 0.568);
+        border-top: 1px solid rgba(150, 150, 150, 0.568);
+        display: grid;
+        grid-template-columns: auto auto;
+
     }
 }
 
@@ -226,6 +238,16 @@ body{
                     font-size: 1.8rem;
                 }
             }
+        }
+    }
+}
+
+@media (max-width:1100px){
+    #intro4{
+        #second-box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
         }
     }
 }

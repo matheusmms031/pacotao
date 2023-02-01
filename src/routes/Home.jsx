@@ -14,6 +14,7 @@ import Acordion from "../components/Acordion"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Notification from "../components/Notification"
 import FirstTitle from "../components/FirstTitle"
+import Opcoes from "../components/Opcoes"
 
 export function Home(){
     useEffect(() => {
@@ -72,6 +73,12 @@ export function Home(){
                 <section id='intro4'>
                     <div id='primary-box'>
                         <FirstTitle title='O nosso curso vai além de aulas!'>Aqui na Codersmasters não focamos apenas em formar alunos, como também procuramos criar laços e vinculos de amizades entre alunos, para isso temos as seguintes práticas:</FirstTitle>
+                        <div id='second-box'>
+                            <Opcoes Aosdata='fade-up' Aosduration='1500' title='Servidor do Discord'>Nós da Codersmasters disponibilizaremos partes exclusivas de um servidor do Discord para alunos tirarem suas dúvidas e cooperarem na resolução de atividades e projetos.</Opcoes>
+                            <Opcoes Aosdata='fade-up' Aosduration='2000' title='Servidor do Discord'>Nós da Codersmasters disponibilizaremos partes exclusivas de um servidor do Discord para alunos tirarem suas dúvidas e cooperarem na resolução de atividades e projetos.</Opcoes>
+                            <Opcoes Aosdata='fade-up' Aosduration='1500' title='Servidor do Discord'>Nós da Codersmasters disponibilizaremos partes exclusivas de um servidor do Discord para alunos tirarem suas dúvidas e cooperarem na resolução de atividades e projetos.</Opcoes>
+                            <Opcoes Aosdata='fade-up' Aosduration='2000' title='Servidor do Discord'>Nós da Codersmasters disponibilizaremos partes exclusivas de um servidor do Discord para alunos tirarem suas dúvidas e cooperarem na resolução de atividades e projetos.</Opcoes>
+                        </div>
                     </div>
                 </section>
             </div>

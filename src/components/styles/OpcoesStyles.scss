@@ -1,0 +1,52 @@
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 2rem;
+}
+
+.opcoes-title{
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+    padding-bottom: 3px;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.opcoes-content{
+    color: white;
+    text-align: justify;
+}
+
+@media (max-width: 1200px){
+    .opcoes{
+        width: 30rem;
+    }
+    .opcoes-title{
+        border-bottom: 0px solid rgba(255, 255, 255, 0.432);
+    }
+}
+
+@media (max-width: 1100px){
+    .opcoes{
+        width: 50rem;
+    }
+}
+
+@media (max-width: 880px){
+    .opcoes{
+        width: 30rem;
+    }
+}
+
+@media (max-width: 600px){
+    .opcoes{
+        width: 20rem;
+    }
+}
+
+@media (max-width: 350px){
+    .opcoes{
+        width: 15rem;
+    }
+}
