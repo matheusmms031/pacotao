@@ -177,6 +177,10 @@ body{
     }
 }
 
+.primary-box{
+    margin: 15px;
+    width: 65rem;
+}
 
 #intro4{
     display: flex;
@@ -186,11 +190,6 @@ body{
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom, #17151E 0%, rgba(#17151E, 0.9) 80%), radial-gradient(at top center, #17151E 0%, rgba(0,0,0,0.40) 120%) #9898982d;
-
-    #primary-box{
-        margin: 10px;
-        width: 65rem;
-    }
 
     #second-box{
         margin-top: 2rem;
@@ -207,37 +206,50 @@ body{
 #intro5{
     display: flex;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top:5rem;
+    padding-bottom: 5rem;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to bottom, #17151E 0%, rgba(#17151E, 0.9) 80%), radial-gradient(at top center, #17151E 0%, rgba(0,0,0,0.40) 120%) #9898982d;
 
+    p{
+        color: white;
+        font-size: 1.15rem;
+        text-align: justify;
+    }
 
-    #perfilbox{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #17151E;
-        width: 70%;
-        color:white;
-
-        #perfilbox-image{
-            width: 600px;
-        }
-
-        #perfilbox-content{
-            padding: 2rem;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            text-align: left;
-            flex-direction: column;
-
-
-        }
+    h1{
+        margin-bottom: 1.7rem;
+        color: white;
+        font-size: 3rem;
+        font-family: 'Sofia Sans';
     }
 }
 
+
+// #perfilbox{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     background-color: #17151E;
+//     width: 70%;
+//     color:white;
+
+//     #perfilbox-image{
+//         width: 600px;
+//     }
+
+//     #perfilbox-content{
+//         padding: 2rem;
+//         display: flex;
+//         width: 100%;
+//         height: 100%;
+//         text-align: left;
+//         flex-direction: column;
+
+
+//     }
+// }
 
 @media (max-width: 1200px){ // INTRO 1
     #intro1{
@@ -271,9 +283,6 @@ body{
                 }
             }
         }
-    }
-    #intro5{
-        display: none;
     }
 }
 
@@ -352,6 +361,19 @@ body{
                     font-size: 1.5rem;
                 }
             }
+        }
+    }
+
+    #intro5{
+        p{
+            font-size: 1rem;
+            margin: 15px;
+        }
+
+        h1{
+            font-size: 2.1rem;
+            margin-left: 15px;
+            margin-right: 15px;
         }
     }
 

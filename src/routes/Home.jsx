@@ -77,7 +77,7 @@ export function Home(){
                     </div>
                 </section>
                 <section id='intro4'>
-                    <div id='primary-box'>
+                    <div className='primary-box'>
                         <FirstTitle title='O nosso curso vai além de aulas!'>Aqui na Codersmasters não focamos apenas em formar alunos, como também procuramos criar laços,vinculos de amizades entre alunos e criar um curso para todos com um valor acessivel, para isso temos as seguintes práticas:</FirstTitle>
                         <div id='second-box'>
                             <Opcoes Aosdata='fade-up' Aosduration='1500' title='Servidor do Discord' image={Discord}>
@@ -101,14 +101,14 @@ export function Home(){
                     </div>
                 </section>
                 <section id='intro5'>
-                    <div id='perfilbox'>
-                        <img src={Pessoa} id='perfilbox-image'/>
-                        <div id='perfilbox-content'>
-                            <span id='perfilbox-cabecalho'>Quem é o professor?</span>
-                            <span id='perfilbox-name'>Matheus Magalhães</span>
-                            <span id='perfilbox-stats'>Criador da Codersmasters</span>
-                            <span id='perfilbox-text'></span>
-                        </div>
+                    <div className='primary-box'>
+                        <h1>Porque este curso?</h1>
+                        <p data-aos='zoom-in' data-aos-duration='1000'>Eu Matheus Magalhães como jovem programador passei por muitos problemas e errei de mais para chegar no nível em que me encontro, porém foquei no que queria e fiquei
+                        cansado de ouvir: "você é jovem de mais para ensinar" ou "você não vai chegar a lugar nenhum com isso", pois bem se passaram 7 anos e aqui estou eu.Nesse curso reuni tudo que aprendi de Python nesses ultimos 7 anos de estudos, e pasmem são conteudos que não acabam mais...</p>
+                        <p data-aos='zoom-in' data-aos-duration='1000'>Além do conteudo também tem a parte de afiliação dos alunos, como achei R$ 250,00 muita coisa, algo que deixaria de ser generosidade minha eu pensei por bastante tempo
+                        e cheguei na conclusão de abrir o curso para o mercado de afiliação, assim os próprios alunos podem usar um link de vendas e vender os cursos para os amigos interessados e ganharem 50% do lucro, no caso R$ 125,00,
+                        então caso o aluno queira conseguir parte do dinheiro de volta ele pode simplismente compartilhar o link de afiliação para o amigo e fazer com que compre pelo link, assim ganhando direito a comissão.
+                        </p>
                     </div>
                 </section>
             </div>
