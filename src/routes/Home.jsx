@@ -19,6 +19,8 @@ import Book from '../assets/book.svg'
 import Discord from '../assets/discord.svg'
 import Atividade from '../assets/atividades.svg'
 import Afiliado from '../assets/alunoafiliado.svg'
+import Pessoa from '../assets/pessoa.svg'
+
 
 export function Home(){
     useEffect(() => {
@@ -99,7 +101,14 @@ export function Home(){
                     </div>
                 </section>
                 <section id='intro5'>
-                    
+                    <div id='perfilbox'>
+                        <img src={Pessoa} id='perfilbox-image'/>
+                        <div id='perfilbox-content'>
+                            <span id='perfilbox-cabecalho'></span>
+                            <span id='perfilbox-name'></span>
+                            <span id='perfilbox-text'></span>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
