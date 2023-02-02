@@ -19,7 +19,7 @@ import Book from '../assets/book.svg'
 import Discord from '../assets/discord.svg'
 import Atividade from '../assets/atividades.svg'
 import Afiliado from '../assets/alunoafiliado.svg'
-import Pessoa from '../assets/pessoa.svg'
+import Pessoa from '../assets/eu.jpg'
 
 
 export function Home(){
@@ -104,8 +104,9 @@ export function Home(){
                     <div id='perfilbox'>
                         <img src={Pessoa} id='perfilbox-image'/>
                         <div id='perfilbox-content'>
-                            <span id='perfilbox-cabecalho'></span>
-                            <span id='perfilbox-name'></span>
+                            <span id='perfilbox-cabecalho'>Quem é o professor?</span>
+                            <span id='perfilbox-name'>Matheus Magalhães</span>
+                            <span id='perfilbox-stats'>Criador da Codersmasters</span>
                             <span id='perfilbox-text'></span>
                         </div>
                     </div>
