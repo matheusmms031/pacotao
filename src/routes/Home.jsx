@@ -18,6 +18,7 @@ import Opcoes from "../components/Opcoes"
 import Book from '../assets/book.svg'
 import Discord from '../assets/discord.svg'
 import Atividade from '../assets/atividades.svg'
+import Afiliado from '../assets/alunoafiliado.svg'
 
 export function Home(){
     useEffect(() => {
@@ -87,13 +88,18 @@ export function Home(){
                                 em equipe criar um e-book, usaremos ele de referência maior no decorrer do curso.
                             </Opcoes>
                             <Opcoes Aosdata='fade-up' Aosduration='1500' title='Atividades' image={Atividade}>
-                                No intuito de melhorar a nossa didática criamos uma lista de atividades para os alunos realizarem, atividades essas que tem resolução no e-book digital, disponivel juntamente com a compra do curso.
+                                No intuito de melhorar a nossa didática criamos uma lista de atividades para os alunos realizarem,
+                                 atividades essas que tem resolução no e-book digital, disponivel juntamente com a compra do curso.
                              </Opcoes>
-                            <Opcoes Aosdata='fade-up' Aosduration='2000' title='Aluno afiliado'>
-                                Como sabemos que o valor de R$ 250,00 é muito dinheiro para alguns, tivemos a ideia de fazer com que alunos possam vender o curso para amigos com o link de afiliado ganhando 50% de comissão.
+                            <Opcoes Aosdata='fade-up' Aosduration='2000' title='Aluno afiliado' image={Afiliado}>
+                                Como sabemos que o valor de R$ 250,00 é muito dinheiro para alguns, tivemos a ideia de fazer
+                                com que alunos possam vender o curso para amigos com o link de afiliado ganhando 50% de comissão.
                             </Opcoes>
                         </div>
                     </div>
+                </section>
+                <section id='intro5'>
+                    
                 </section>
             </div>
         </div>
