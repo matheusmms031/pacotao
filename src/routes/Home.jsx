@@ -41,7 +41,7 @@ export function Home(){
                         <main id='maincab'>
                             <div id='caixa1'>
                                 <div id='texts'>
-                                    <span id='title'>Aprenda e domine a linguagem Python no nosso curso <span className="marcadorprincipal">Pacotão do programador</span> e seja um dos programadores mais bem pagos da atualidade</span>
+                                    <span id='title'>Aprenda e domine a linguagem Python no nosso curso <span className="marcadorprincipal">Guia do Pythonista</span> e seja um dos programadores mais bem pagos da atualidade</span>
                                     <span id='preco'>9x R$8,40 ou R$67 à vista</span>
                                 </div>
                                 <ButtonGrande>COMECE AGORA</ButtonGrande>
@@ -76,7 +76,7 @@ export function Home(){
                 </section>
                 <section id='intro4'>
                     <div id='primary-box'>
-                        <FirstTitle title='O nosso curso vai além de aulas!'>Aqui na Codersmasters não focamos apenas em formar alunos, como também procuramos criar laços e vinculos de amizades entre alunos, para isso temos as seguintes práticas:</FirstTitle>
+                        <FirstTitle title='O nosso curso vai além de aulas!'>Aqui na Codersmasters não focamos apenas em formar alunos, como também procuramos criar laços,vinculos de amizades entre alunos e criar um curso para todos com um valor acessivel, para isso temos as seguintes práticas:</FirstTitle>
                         <div id='second-box'>
                             <Opcoes Aosdata='fade-up' Aosduration='1500' title='Servidor do Discord' image={Discord}>
                                 Nós da Codersmasters disponibilizaremos partes 
