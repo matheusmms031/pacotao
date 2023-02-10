@@ -2,9 +2,11 @@ import './styles/ButtonStyles2.scss'
 
 export function ButtonGrande(props){
     return(
-        <div className='buttoncomp2'>
-            {props.children}
-        </div>       
+        <a href={props.href} style={{'textDecoration':'none'}}>
+            <div className='buttoncomp2'>
+                {props.children}
+            </div>   
+        </a>    
     )
 }
 

@@ -27,6 +27,7 @@ export function Home(){
         Aos.init({duration: 2000}), []
     })
 
+    alert('O curso está dispónivel para venda antecipada por metade do preço, lançamento do curso é estimado para mês 5 porém há a capacidade do desenvolvimento ser prolongado até junho.')
 
     return(
         <div>
@@ -38,15 +39,15 @@ export function Home(){
                                     <img src={Logo} style={{'hover':{'width':'500px'}}}/>
                                     Codersmasters
                                 </div>
-                            <Button>QUERO PARTICIPAR</Button>
+                            <Button href='https://pay.hotmart.com/M79528170J?off=6cbf40g2'>QUERO PARTICIPAR</Button>
                         </header>
                         <main id='maincab'>
                             <div id='caixa1'>
                                 <div id='texts'>
                                     <span id='title'>Aprenda e domine a linguagem Python no nosso curso <span className="marcadorprincipal">Guia do Pythonista</span> e seja um dos programadores mais bem pagos da atualidade</span>
-                                    <span id='preco'>9x R$8,40 ou R$67 à vista</span>
+                                    <span id='preco'><s>6x R$45,98 ou R$250 à vista</s><br/>R$125,00 Comprando antecipadamente</span>
                                 </div>
-                                <ButtonGrande>COMECE AGORA</ButtonGrande>
+                                <ButtonGrande href='https://pay.hotmart.com/M79528170J?off=6cbf40g2'>COMECE AGORA</ButtonGrande>
                             </div>
                         </main>
                     </section>
@@ -111,6 +112,17 @@ export function Home(){
                         </p>
                     </div>
                 </section>
+                {/* <section id='intro6'>
+                    <div id="perfilbox">
+                        <img src={Pessoa} id='perfilbox-image'/>
+                        <div id="perfilbox-content">
+                            <span id='pbc-title1'>Quem é o professor?</span>
+                            <span id='pbc-title2'>Matheus Magalhães</span>
+                            <span id='pbc-title3'>Eu Matheus Magalhães como jovem programador passei por muitos problemas e errei de mais para chegar no nível em que me encontro, porém foquei no que queria e fiquei
+                        cansado de ouvir: "você é jovem de mais para ensinar" ou "você não vai chegar a lugar nenhum com isso", pois bem se passaram 7 anos e aqui estou eu.Nesse curso reuni tudo que aprendi de Python nesses ultimos 7 anos de estudos, e pasmem são conteudos que não acabam mais...</span>
+                        </div>
+                    </div>
+                </section> */}
             </div>
         </div>
     )

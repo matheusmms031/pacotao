@@ -2,9 +2,11 @@ import './styles/ButtonStyles.scss'
 
 export function Button(props){
     return(
-        <div className='buttoncomp1'>
-            {props.children}
-        </div>       
+        <a href={props.href} style={{'textDecoration':'none'}}>
+            <div className='buttoncomp1'>
+                {props.children}
+            </div> 
+        </a>      
     )
 }
 

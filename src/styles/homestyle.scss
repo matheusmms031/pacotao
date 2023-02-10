@@ -82,9 +82,8 @@ body{
                 font-size: 3rem;
             }
             #preco{
-                font-size: large;
+                font-size: 1.2rem;
                 color: yellow;
-                animation: glow 1s ease-in-out infinite alternate;
             }
         }
     }
@@ -227,29 +226,47 @@ body{
 }
 
 
-// #perfilbox{
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     background-color: #17151E;
-//     width: 70%;
-//     color:white;
+#intro6{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(35, 32, 39);
+    
+#perfilbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #17151E;
+    width: 70%;
+    color:white;
+    border-radius: 20px;
+    padding: 2rem;
 
-//     #perfilbox-image{
-//         width: 600px;
-//     }
+    #perfilbox-image{
+        width: 400px;
+    }
 
-//     #perfilbox-content{
-//         padding: 2rem;
-//         display: flex;
-//         width: 100%;
-//         height: 100%;
-//         text-align: left;
-//         flex-direction: column;
+    #perfilbox-content{
+        padding: 2rem;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        flex-direction: column;
 
 
-//     }
-// }
+        #pbc-title2{
+            font-size: 2rem;
+            font-family: 'Sofia Sans';
+        }
+
+        #pbc-title3{
+            text-align: justify;
+        }
+    }
+}
+
+}
 
 @media (max-width: 1200px){ // INTRO 1
     #intro1{
