@@ -255,12 +255,24 @@ body{
         flex-direction: column;
 
 
+        #perfilbox-titles{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #pbc-title1{
+            font-style: italic;
+        }
+
         #pbc-title2{
             font-size: 2rem;
+            width: 19rem;
+            border-bottom: 2px solid rgba(123, 17, 209, 0.363);
             font-family: 'Sofia Sans';
         }
 
         #pbc-title3{
+            padding-top: 20px;
             text-align: justify;
         }
     }
